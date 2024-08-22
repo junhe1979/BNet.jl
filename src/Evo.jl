@@ -18,6 +18,7 @@ end
 
 #模拟演化
 function evolute(reactionsV::Vector{Vector{Reaction}}, Func::Array{Function}, S, keys)
+
     timeMax, steps, method = keys.timeMax, keys.steps, keys.method
     numberNodes, numberStates = size(S.R[1])
     t = Float64[0.0] # 时间轨迹，t[0]是初始时间
